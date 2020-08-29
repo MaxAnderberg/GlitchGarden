@@ -23,13 +23,26 @@ public class SpawnDefender : MonoBehaviour
     private void OnMouseDown()
     {
         {
-            SpawnDefenders(GetSquareClicked());
+            AttemptToPlaceDefenderAt(GetSquareClicked());
         }
     }
 
     public void SetSelectedDefender(Defender defenderToSelect)
     {
         defender = defenderToSelect;
+    }
+
+    private void AttemptToPlaceDefenderAt(Vector2 gridPos)
+    {
+        var coinDisplay = FindObjectOfType<CoinDisplay>();
+        int defenderCost = defender.GetStarCost();
+        // if we have enough cash to spend we can spend the cash!
+        if(coinDisplay.HaveEnoughCoins(defenderCost))
+        {
+            SpawnDefenders(gridPos);
+            coinDisplay.SpendCoin(defenderCost);
+        }
+
     }
 
     private Vector2 GetSquareClicked()
