@@ -6,15 +6,14 @@ public class Health : MonoBehaviour
 {
     [SerializeField] float health = 100f;
     [SerializeField] GameObject deathVFX;
-    [SerializeField] float deathTime = 1f;
+    float deathTime = 1f;
 
     public void DealDamage(float damage)
     {
         health -= damage;
         if (health <= 0 )
         {
-
-            DeathVFX();
+            //DeathVFX();
             Destroy(gameObject);
         }
     }
