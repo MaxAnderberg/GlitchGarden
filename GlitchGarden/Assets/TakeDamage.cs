@@ -12,7 +12,8 @@ public class TakeDamage : MonoBehaviour
        
         if (player.GetPlayerHealth() <= 0)
         {
-            SceneManager.LoadScene(2);
+            FindObjectOfType<LevelController>().HandleLoseCondition();
+            //FindObjectOfType<Level>().LoadYouLose();
         } else if (player.GetPlayerHealth() >= 1)
         {
             player.TakeDamage(1);
