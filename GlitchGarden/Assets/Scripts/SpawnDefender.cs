@@ -5,11 +5,22 @@ using UnityEngine;
 public class SpawnDefender : MonoBehaviour
 {
     Defender defender;
+    GameObject defenderParent;
+    const string DEFENDER_PARENT_NAME = "Defenders";
 
     // Start is called before the first frame update
     void Start()
     {
+        CreateDefenderParent();
+    }
 
+    private void CreateDefenderParent()
+    {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defenderParent)
+        {
+            defenderParent = new GameObject(DEFENDER_PARENT_NAME);
+        }
     }
 
     // Update is called once per frame
@@ -63,6 +74,7 @@ public class SpawnDefender : MonoBehaviour
     private void SpawnDefenders(Vector2 roundedPos)
     {
             Defender newDefender = Instantiate(defender, roundedPos, Quaternion.identity) as Defender;
+        newDefender.transform.parent = defenderParent.transform;
     }
   
 
