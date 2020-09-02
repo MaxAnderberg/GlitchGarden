@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e797d57d21f8c2419eae46b712bfc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 3
-  projectileDamage: 30
+  projectileSpeed: 4
+  projectileDamage: 175
 --- !u!95 &3857882603881257950
 Animator:
   serializedVersion: 3
