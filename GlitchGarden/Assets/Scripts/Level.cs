@@ -48,6 +48,13 @@ public class Level : MonoBehaviour
         
     }
 
+    public void LoadOptionsMenu()
+    {
+       
+        SceneManager.LoadScene("Options Screen");
+
+    }
+
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentScene + 1);
