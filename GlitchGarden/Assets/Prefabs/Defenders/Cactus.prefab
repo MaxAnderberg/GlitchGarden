@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c95ddab039eac40a500d61a16bdd8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinCost: 100
+  coinCost: 50
   coinVFX: {fileID: 0}
 --- !u!212 &1070419220
 SpriteRenderer:
@@ -173,9 +173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a30c37379a3fcf44abde457ad7272afd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 150
+  health: 65
   deathVFX: {fileID: 0}
-  deathTime: 1
 --- !u!1001 &1647199001577596071
 PrefabInstance:
   m_ObjectHideFlags: 0
