@@ -269,22 +269,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 506769825, guid: 80ee9b3cf4c7e6a4dbfd68173cffeba6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 514551815, guid: 80ee9b3cf4c7e6a4dbfd68173cffeba6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 954349474, guid: 80ee9b3cf4c7e6a4dbfd68173cffeba6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669528589, guid: 80ee9b3cf4c7e6a4dbfd68173cffeba6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1669528590, guid: 80ee9b3cf4c7e6a4dbfd68173cffeba6, type: 3}
       propertyPath: defenderPrefab
       value: 
@@ -393,16 +377,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5031998464680986239, guid: 80ee9b3cf4c7e6a4dbfd68173cffeba6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5326280163094061350, guid: 80ee9b3cf4c7e6a4dbfd68173cffeba6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5326280163149086313, guid: 80ee9b3cf4c7e6a4dbfd68173cffeba6,
         type: 3}
@@ -525,13 +499,9 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1245115301, guid: da1723123d7e74840974290832f6906c, type: 3}
-      propertyPath: levelTime
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 1257861106, guid: da1723123d7e74840974290832f6906c, type: 3}
       propertyPath: coins
-      value: 250
+      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 1396618167, guid: da1723123d7e74840974290832f6906c, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1379,11 +1349,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7647691531504348916, guid: 3d0f754876021d44595c89b297833c98,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7647691531717685719, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: attackerPrefab.Array.size
@@ -1416,31 +1381,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6855980590782203806, guid: 5897db27d97c1bd4baaafea7d90b2df0,
         type: 3}
-    - target: {fileID: 7647691532300159099, guid: 3d0f754876021d44595c89b297833c98,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8641648367245073333, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: attackerPrefab.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8641648367245073333, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: maxSpawnDelay
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8641648367245073333, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: minSpawnDelay
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8641648367245073333, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: attackerPrefab.Array.data[0]
       value: 
-      objectReference: {fileID: 6855980590782203806, guid: 5897db27d97c1bd4baaafea7d90b2df0,
+      objectReference: {fileID: 7165139839721329518, guid: b3106c2c3c75e354c89810ccf8c8b976,
         type: 3}
     - target: {fileID: 8641648367245073333, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
@@ -1448,11 +1408,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6855980590782203806, guid: 5897db27d97c1bd4baaafea7d90b2df0,
         type: 3}
-    - target: {fileID: 8641648367253216277, guid: 3d0f754876021d44595c89b297833c98,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8641648367526180602, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: m_Name
@@ -1570,23 +1525,23 @@ PrefabInstance:
     - target: {fileID: 8641648369020179834, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: attackerPrefab.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8641648369020179834, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: minSpawnDelay
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8641648369020179834, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: maxSpawnDelay
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8641648369020179834, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
       propertyPath: attackerPrefab.Array.data[0]
       value: 
-      objectReference: {fileID: 6855980590782203806, guid: 5897db27d97c1bd4baaafea7d90b2df0,
+      objectReference: {fileID: 7165139839721329518, guid: b3106c2c3c75e354c89810ccf8c8b976,
         type: 3}
     - target: {fileID: 8641648369020179834, guid: 3d0f754876021d44595c89b297833c98,
         type: 3}
